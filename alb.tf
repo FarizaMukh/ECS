@@ -3,7 +3,7 @@ module "alb" {
 
   name    = "my-alb"
   vpc_id  = "module.vpc.vpc_id"
-  subnets = ["subnet-abcde012", "subnet-bcde012a"]
+  subnets = ["10.0.101.0/24", "10.0.102.0/24", "10.0.103.0/24"]
 
   # Security Group
   security_group_ingress_rules = {
