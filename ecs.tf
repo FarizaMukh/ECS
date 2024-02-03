@@ -16,7 +16,7 @@ resource "aws_ecs_task_definition" "app" {
   container_definitions = jsonencode([
     {
       name      = "my-app"
-      image     = docker push freezy123/freezy:0.01 # Replace with your Docker image
+      image     = freezy123/freezy:0.01 # Replace with your Docker image
       cpu       = var.container_cpu
       memory    = var.container_memory
       essential = true
