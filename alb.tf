@@ -2,7 +2,7 @@ module "alb" {
   source = "terraform-aws-modules/alb/aws"
 
   name    = "my-alb"
-  vpc_id  = "vpc-abcde012"
+  vpc_id  = "module.vpc.vpc_id"
   subnets = ["subnet-abcde012", "subnet-bcde012a"]
 
   # Security Group
